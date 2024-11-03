@@ -1,4 +1,19 @@
 # Socket Programming
+# Common Socket Functions
+
+    socket()
+    .bind()
+    .listen()
+    .accept()
+    .connect()
+    .connect_ex()
+    .send()
+    .recv()
+	.close()
+
+# Client-Server Model
+![alt text](image.png)
+
 # TCP Client
 ```python
 #!/home/calypse/repos/python-networking/codes/bin/python3
@@ -40,7 +55,7 @@ bind_port = 9999
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind((bind_ip, bind_port))
 
-# Listen to maximum 5 connections
+# Specify the number of unaccepted connections that the system will allow before refusing new connections. 
 server.listen(5)
 
 print("[*] Listening on: %s:%d" % (bind_ip, bind_port))
@@ -67,4 +82,6 @@ while True:
 									# args -> arguments passed to the function
 	client_handler.start()
 ```
+
+
 
