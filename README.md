@@ -85,3 +85,6 @@ while True:
 
 
 
+
+# Multi-Threading
+A single-threaded server can handle only one client. That is why we use threading library to enable the server to handle multiple clients. It allows the server to spawn a new thread for each client
